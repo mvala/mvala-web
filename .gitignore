@@ -36,3 +36,5 @@ Thumbs.db
 # VScode
 .vscode
 
+# proxy config
+proxy.conf.json

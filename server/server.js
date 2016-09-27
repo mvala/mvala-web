@@ -1,17 +1,20 @@
 'use strict';
 
 //Load version
-var appinfo = require('../package.json');
+let appinfo = require('../package.json');
 console.log(appinfo.name + " " + appinfo.version);
 
-var path = require('path');
+let path = require('path');
+let url = require('url');
 let express = require('express');
 let app = express();
 let http = require('http').Server(app);
 let io = require('socket.io')(http);
 let usercount = 0;
 
-app.set('port', process.env.PORT || 3000);
+let proxyinfo = require('../proxy.conf.json');
+
+app.set('port', url.parse(proxyinfo['/']['target']).port);
 app.use(express.static(path.join(__dirname, '')));
 
 io.on('connection', function (socket) {

@@ -4,7 +4,8 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "concurrently --kill-others \"ng serve --proxy-config proxy.conf.json --watch\" \"server/start.sh\"",
+    "start": "concurrently --kill-others \"ng serve --proxy-config proxy.conf.json --host $(hostname) --watch\" \"server/start.sh\"",
+    "prod": "concurrently --kill-others \"ng serve --proxy-config proxy.conf.json --host $(hostname) --port=$PORT --watch --prod\" \"server/start.sh\"",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
