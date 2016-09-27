@@ -7,7 +7,8 @@ import { ServerInfoService } from './shared/server-info.service';
   styleUrls: ['./app.component.css'],
   providers: [ServerInfoService]
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit, OnDestroy {
   title = 'app works!';
   connection: any;
   info: any;
