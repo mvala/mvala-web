@@ -9,12 +9,12 @@ let url = require('url');
 let express = require('express');
 let app = express();
 let http = require('http').Server(app);
-let io = require('socket.io')(http);
+let io = require('socket.io')(http, { path: '/api/socket.io'});
 let usercount = 0;
 
 let proxyinfo = require('../proxy.conf.json');
 
-app.set('port', url.parse(proxyinfo['/']['target']).port);
+app.set('port', url.parse(proxyinfo['/api']['target']).port);
 app.use(express.static(path.join(__dirname, '')));
 
 io.on('connection', function (socket) {

@@ -11,7 +11,8 @@ export class ServerInfoService {
 
   getInfo() {
     let observable = new Observable(observer => {
-      this.socket = io(this.url);
+      this.socket = io(this.url, { path: '/api/socket.io'} );
+      console.log(this.socket);
       this.socket.on('app.info', (data) => {
         observer.next(data);
       });
