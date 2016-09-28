@@ -1,0 +1,20 @@
+{
+  "name": "mvala-web-api",
+  "version": "0.0.0",
+  "description": "mvala's web api",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mvala/mvala-web.git"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "postinstall": "",
+    "start": "node server"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8",
+    "url": "^0.11.0"
+  }
+}
