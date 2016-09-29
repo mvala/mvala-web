@@ -16,6 +16,7 @@
       "mobile": false,
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "spinner.css",
         "styles.css"
       ],
       "scripts": [
