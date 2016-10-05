@@ -15,14 +15,17 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "../node_modules/font-awesome/css/font-awesome.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/mdbootstrap/css/mdb.css",
         "spinner.css",
         "styles.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
         "../node_modules/tether/dist/js/tether.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/mdbootstrap/js/mdb.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
