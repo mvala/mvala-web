@@ -8,5 +8,5 @@ import { ServerInfoComponent } from './server/server-info/server-info.component'
 })
 
 export class AppComponent {
-  title = 'app works! with bootstrap 4';
+  title = 'app works! with bootstrap 4 and Material design';
 }
