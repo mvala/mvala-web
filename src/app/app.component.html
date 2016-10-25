@@ -1,14 +1,174 @@
-<div class="container">
-  <div class="jumbotron">
-    <h1 class="display-3">{{title}}</h1>
-    <app-server-info></app-server-info>
-  </div>
-  <div style="height: 100vh">
-    <div class="flex-center">
-      <h1 class="animated fadeIn">Material Design for Bootstrap</h1>
-      <button type="button" class="btn btn-primary">Primary</button>
+<header>
+	<!--Navbar-->
+	<nav class="navbar navbar-dark primary-color-dark">
+		<!-- Collapse button-->
+		<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+                <i class="fa fa-bars"></i>
+            </button>
+		<div class="container">
+			<!--Collapse content-->
+			<div class="collapse navbar-toggleable-xs" id="collapseEx">
+				<!--Navbar Brand-->
+				<a class="navbar-brand" href="#">MVALA</a>
+				<!--Links-->
+				<ul class="nav navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Activity</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Presentations</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Publications</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+				</ul>
+				<!--Search form-->
+				<form class="form-inline">
+					<input class="form-control" type="text" placeholder="Search">
+				</form>
+			</div>
+			<!--/.Collapse content-->
+		</div>
+	</nav>
+	<!--/.Navbar-->
+</header>
+<main>
 
-    </div>
-  </div>
+	<!--Main layout-->
+	<div class="container-fluid">
+		<div class="row">
 
-</div>
+			<!--Sidebar-->
+			<div class="col-md-2">
+
+				<div class="widget-wrapper">
+					<h4>Info:</h4>
+					<br>
+					<div class="list-group">
+						<a href="#" class="list-group-item active">About</a>
+						<a href="#" class="list-group-item">Activity</a>
+						<a href="#" class="list-group-item">Presentations</a>
+						<a href="#" class="list-group-item">Publications</a>
+					</div>
+				</div>
+
+				<div class="widget-wrapper">
+					<h4>Login as:</h4>
+					<br>
+					<div class="card">
+						<div class="card-block">
+							<p><strong>Hybrilit</strong></p>
+							<div class="md-form">
+								<i class="fa fa-user prefix"></i>
+								<input type="text" id="form1" class="form-control">
+								<label for="username">Username</label>
+							</div>
+							<div class="md-form">
+								<i class="fa fa-key prefix"></i>
+								<input type="password" id="form2" class="form-control">
+								<label for="form2">Password</label>
+							</div>
+							<button class="btn btn-primary">Submit</button>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--/.Sidebar-->
+
+			<!--Main column-->
+			<div class="col-md-10">
+
+				<!--First row-->
+				<div class="row">
+					<div class="col-md-12">
+						<h1>MVALA's content here</h1>
+					</div>
+				</div>
+				<!--/.First row-->
+			</div>
+			<!--/.Main column-->
+		</div>
+	</div>
+	<!--/.Main layout-->
+
+</main>
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only primary-color-dark">
+
+	<!--Footer Links-->
+	<div class="container-fluid">
+		<div class="row">
+
+			<!--First column-->
+			<div class="col-md-3 offset-md-1">
+				<h5 class="title">ABOUT MARTIN VALA</h5>
+				<p>Slovak Academy of Science and Technical University in Kosice.</p>
+				<li>ALICE experiment at CERN, Geneve, Switzerland</li>
+				<li>HybriLit project at JINR, Dubnas, Russia</li>
+			</div>
+			<!--/.First column-->
+
+			<hr class="hidden-md-up">
+
+			<!--Second column-->
+			<div class="col-md-2 offset-md-1">
+				<h5 class="title">ALICE experiment</h5>
+				<ul>
+					<li><a href="http://www.cern.ch">CERN</a></li>
+					<li><a href="http://aliceinfo.cern.ch">ALICE</a></li>
+				</ul>
+			</div>
+			<!--/.Second column-->
+
+			<hr class="hidden-md-up">
+
+			<!--Third column-->
+			<div class="col-md-2">
+				<h5 class="title">HybriLit</h5>
+				<ul>
+					<li><a href="http://hlit.jinr.ru">Home</a></li>
+					<li><a href="https://dobby.jinr.ru">Auth</a></li>
+					<li><a href="https://gitlab-hlit.jinr.ru">GitLab</a></li>
+					<li><a href="https://indico-hlit.jinr.ru">Indico</a></li>
+				</ul>
+			</div>
+			<!--/.Third column-->
+
+			<hr class="hidden-md-up">
+
+			<!--Fourth column-->
+			<div class="col-md-2">
+				<h5 class="title">SPSE KE</h5>
+				<ul>
+					<li><a href="http://spseke.sk">Home</a></li>
+					<li><a href="https://ipa1.spseke.sk">Auth</a></li>
+					<li><a href="https://gitlab.spseke.sk">GitLab</a></li>
+					<li><a href="https://indico.spseke.sk">Indico</a></li>
+				</ul>
+			</div>
+			<!--/.Fourth column-->
+
+		</div>
+	</div>
+	<!--/.Footer Links-->
+
+	<!--Copyright-->
+	<div class="footer-copyright">
+		<div class="container-fluid">
+			© 2016 Copyright: <a href="http://alike.saske.sk"> mvala </a>
+
+		</div>
+	</div>
+	<!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
